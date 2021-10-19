@@ -1,0 +1,16 @@
+{
+  "title": "cypress",
+  "type": "object",
+  "properties": {
+    "projectId": {
+      "type": "string"
+    },
+    "baseUrl": {
+      "type": "string"
+    },
+    "retries": {
+      "type": "integer"
+    }
+  },
+  "required": ["projectId", "baseUrl", "retries"]
+}

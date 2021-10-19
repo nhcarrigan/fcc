@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  cypressdownloadfile:
+    image: cypressdownloadfile
+    build:
+      context: node_modules/cypress-downloadfile
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3030:3030
+      - 9229:9229
+    command: ['node', '--inspect=0.0.0.0:9229', 'lib/index.js']

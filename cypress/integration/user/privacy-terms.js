@@ -1,5 +1,5 @@
 describe('Privacy terms', () => {
-  it('should not redirect away from email sign up page on login', () => {
+  it.only('should not redirect away from email sign up page on login', () => {
     // Flag used to identify if the `/update-privacy-terms` have been called
     let privacyTermsUpdated = false;
     cy.intercept('PUT', '/update-privacy-terms', () => {
